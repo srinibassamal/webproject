@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+	<title>Saloon</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style type="text/css">
+    body{
+  font-family: 'Reggae One', cursive;
+  background-color: white;
+}
+.wrapper{
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  text-shadow:2px 2px #FF0000;
+}
+p{
+  text-align: center;
+}
+.container{
+  text-align: center;
+}
+#h1{
+  color:white;
+}
+video{
+  width: 800px;
+}
+  </style>
+	</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">The Salon <img src="https://img.icons8.com/color/26/000000/massage.png"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <img src="https://img.icons8.com/plumpy/26/000000/smart-home-checked.png"/><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/book">Book <img src="https://img.icons8.com/ios-filled/26/000000/barbershop.png"/></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gallery"> Gallery <img src="https://img.icons8.com/metro/26/000000/stack-of-photos.png"/></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login"> Login <img src="https://img.icons8.com/material-rounded/26/000000/user-male-circle.png"/></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  
+	<div class="jumbotron">
+	<h1>The Salon</h1>
+  <div id="typer">
+	<p>MAY YOUR DAY BE AS FLAWLESS AS YOUR HAIR</p>
+  </div>
+	<div class="wrapper">
+		<center><video autoplay loop muted class="mySlides">
+			<source src="https://ak.picdn.net/shutterstock/videos/1033485788/preview/stock-footage-attractive-male-is-getting-a-modern-haircut-in-barber-shop-barber-wets-hair-by-spray-and-combs.webm" type="video/mp4">
+		</video></center>
+    <center><video autoplay loop muted class="mySlides">
+      <source src="https://player.vimeo.com/external/408864334.sd.mp4?s=acc3efc22f754667fca911ebb6a1552968b41b91&profile_id=139&oauth2_token_id=57447761">
+    </video></center>
+    <center><video autoplay loop muted class="mySlides">
+      <source src="https://player.vimeo.com/external/521362165.sd.mp4?s=00cec1a284d5b7c0e7b53dec46579ba1c31e46bc&profile_id=139&oauth2_token_id=57447761">
+    </video></center>
+	</div>
+	<div class="container">
+		<div class="center">
+	<button type="button" class="btn btn-dark"><a class="nav-link" href="/book">Book now</a></button>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7000); // Change image every 4 seconds
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>style</title>
+</head>
+<style type="text/css">
+body{
+  border: 2px solid black;
+}
+  .card{
+    border: 5px double black;
+    height: 400px;
+    width: 350px;
+    margin-right: 15px;
+  }
+  .card1{
+    border: 5px double black;
+    height: 400px;
+    width: 350px;
+    margin-left: 15px;
+  }
+  .card2{
+    border: 5px double black;
+    height: 400px;
+    width: 400px;
+    margin-right: 15px;
+  }
+  h1{
+    letter-spacing: 3px;
+  }
+  h2{
+    color: #2196F3;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    letter-spacing: 3px;
+    padding: 20px;
+
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-indent: 50px;
+    
+  }
+</style>
+<body>
+  <center><h1>Our Styles</h1></center>
+  <i class="fa fa-scissors" aria-hidden="true"></i>
+  <center><img src="https://img.icons8.com/ios-filled/100/000000/professional-photographer.png"/></center>
+  <img class="card" align="left" src="https://sj3kt7gq382wx14p1dbzzj19-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/Full-Beard-Style.jpg">
+  <h2 align="left">   HAIR STYLE</h2>
+  <b><p align="left">    A hairstyle, hairdo, or haircut refers to the styling of hair, usually on the human scalp. Sometimes, this could also mean an editing of facial or body hair. The fashioning of hair can be considered an aspect of personal grooming, fashion, and cosmetics, although practical, cultural, and popular considerations also influence some hairstyles.</p></b>
+  <p>During the 15th and 16th centuries, European men wore their hair cropped no longer than shoulder-length, with very fashionable men wearing bangs or fringes. In Italy it was common for men to dye their hair.[14] In the early 17th century male hairstyles grew longer, with waves or curls being considered desirable in upper-class European men.</p>
+  <p>Hair cutting or hair trimming is intended to create or maintain a specific shape and form. There are ways to trim one's own hair but usually another person is enlisted to perform the process, as it is difficult to maintain symmetry while cutting hair at the back of one's head.
+  Cutting hair is often done with hair clipper, scissors and razors. Combs and hair grips are often employed to isolate a section of hair which is then trimmed.</p>
+
+  <img class="card1" align="right" src="https://www.menshairstylestoday.com/wp-content/uploads/2018/12/Best-Beard-Ideas.jpg">
+  <h2 align="left"> BEARD STYLE</h2>
+  <b><p>The popularity of beards has waxed (the mid 19th century) and waned (the 1950s), and for the past decade or so has been on the definite upswing. Maybe you’ve tried growing one out yourself. Maybe you did it willy nilly, deciding on your beard’s length/style as you went along. Or, perhaps you took a more intentional approach and looked up the copious advice out there on which beard type was right for you.</p><p>And that’s likely when the trouble started.Because most of the guides out there on men’s beard styles are terrible.
+  There are those which highlight categories like the “corporate beard” and the “short beard” as separate beard styles . . . but when you look at them, they look exactly the same. 
+  Or, these guides will give beard styles weird names that often just seem made up. If I were to go to a barber and say, “I want the ‘Garibaldi’ beard style,” would that mean anything to him, or would he just look at me like a weirdo?</p><p>With the guidelines above, you’ll be able to pick a beard style that will look good on you. As with most things in life, you can never go wrong with keeping it simple.
+  But if you’re not satisfied with a simple beard style and want something fancy that you’ve seen on the internet, Thad recommends just showing your barber a picture of what you’re going for</p></b>
+
+  <img class="card2" align="left" src="https://media.newstracklive.com/uploads/lifestyle-health/fashion-and-beauty/Feb/04/big_thumb/kjnhsfdsf_5c5836794a698.jpg">
+  <h2>SMOOTH TRIM</h2>
+  <b><p>There are two methods in trimming, i.e. smooth and non-smooth trimming. In smooth trimming, the boundary element will be cut exactly along the trimming curve; while in non-smooth trimming, the boundary element can be either kept or removed from the model and it will not be cut in half. What is the advantage of each method?</p><p>The advantage of smooth trimming is that the boundary of the part will follow the trimming curve exactly. However, it will result in some very bad aspect ratio when the boundary elements are cut. And these bad elements will cause trouble for the later springback analysis.</p><p>
+  The advantage of non-smooth trimming is that it will not affect the aspect ratio of the element, and it will not cause extra trouble for the later springback analysis. However, this boundary geometry from this method usually cannot follow the trimming curve. Even though the boundary of the part is not good, it is seen that the spring back prediction is not affected obviously.</p></b>
+</body>
+</html>

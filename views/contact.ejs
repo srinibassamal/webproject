@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Form</title>
+</head>
+<style type="text/css">
+body{
+  background-image: url("https://redefinepoundbury.com/wp-content/uploads/2018/11/contact-form-background-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+  color: white;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=number], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=Email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=Date], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=Time], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+<body>
+
+  <center><h2>Appointment Form For Hair Saloon</h2></center>
+
+  <div class="container">
+    <form id="contact-form" method="POST" action="/contact">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+       <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="cnumber">Contact Number</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="cnumber" name="cnumber" placeholder="Your Contact number">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Email">Email Id</label>
+      </div>
+      <div class="col-75">
+        <input type="Email" id="Email" name="Email" placeholder="Your emaild id">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Date">Date</label>
+      </div>
+      <div class="col-75">
+        <input type="Date" id="Date" name="Date" placeholder="Appointment Date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Time">Time</label>
+      </div>
+      <div class="col-75">
+        <input type="Time" id="Time" name="Time" placeholder="Appointment Time">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="country">District</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Bhubaneswar">Bhubaneswar</option>
+          <option value="Cuttack">Cuttack</option>
+          <option value="Dhenkanal">Dhenkanal</option>
+          <option value="Puri">Puri</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <h3>What you want to do</h3>
+    <input type="checkbox" id="Haircut" name="Haircut" value="Haircut">
+  <label for="vehicle1"> Haircut</label><br>
+  <input type="checkbox" id="Beard grooming" name="Beard grooming" value="Beard grooming">
+  <label for="vehicle2"> Beard grooming</label><br>
+  <input type="checkbox" id="Facial" name="Facial" value="Facial">
+  <label for="vehicle3"> Facial</label><br>
+  <input type="checkbox" id="Straightening" name="Straightening" value="Straightening">
+  <label for="vehicle3"> Straightening</label><br>
+  <input type="checkbox" id="BeardShaping" name="BeardShaping" value="BeardShaping">
+  <label for="vehicle3"> BeardShaping</label><br>
+    <center><input type="submit" name="Submit" value="submit"></center>
+
+    </form>
+  </div>
+
+
+</body>
+</html>
